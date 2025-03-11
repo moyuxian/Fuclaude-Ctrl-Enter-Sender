@@ -1,7 +1,7 @@
 let isHandleCtrlEnterEnabled = false;
 
 function shouldHandleCtrlEnter(url, event) {
-  if (url.startsWith("https://claude.ai")) {
+  if (url.startsWith("https://demo.fuclaude.com")) {
     return event.target.tagName === "DIV" && event.target.contentEditable === "true";
   }
   if (url.startsWith("https://www.bing.com/chat")){
@@ -11,7 +11,7 @@ function shouldHandleCtrlEnter(url, event) {
 }
 
 function shouldPreventDefault(url){
-  if (url.startsWith("https://claude.ai")) {
+  if (url.startsWith("https://demo.fuclaude.com")) {
     return true;
   }
   if (url.startsWith("https://www.bing.com/chat")){
